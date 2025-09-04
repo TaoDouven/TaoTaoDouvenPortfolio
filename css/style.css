@@ -1,0 +1,520 @@
+/****************/
+/*ALGEMENE STIJL*/
+/****************/
+
+/*Universeel stylen*/
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(75 75 75);
+  margin: 0;
+  padding: 0;
+}
+
+/*padding stylen tekst*/
+h1, h2, h3, p{
+  padding: 1rem;
+}
+
+ /*Navigatie styling*/
+
+ header{
+  background-color: #ffe8e8;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 1em;
+  font-size: 20px;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(75 75 75);;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+/*Main stylen*/
+.Home main{
+  padding-top: 7em;
+}
+
+/****************/
+/*FONTS*/
+/****************/
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.welcome{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/****************/
+/*HOME PAGINA*/
+/****************/
+
+
+/* Startpositie voor alles */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Actieve animatieklasse */
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Eventuele vertragingen per element */
+.delay-0 { transition-delay: 0s; }
+.delay-1 { transition-delay: 0.4s; }
+.delay-2 { transition-delay: 0.8s; }
+.delay-3 { transition-delay: 1.2s; }
+
+ /*Profiel foto stylen padding*/
+ .Home .prof {
+  padding: 1rem;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+.Home .af1{
+width: 100%;
+height: auto;
+}
+
+.Home .af2{
+  width: 100%;
+  height: auto;
+}
+
+.Home h4{
+  padding: 1rem;
+}
+
+@media screen and (min-width: 20em) {
+
+  /*Main stylen*/
+  .Home main{
+  padding-top: 5em;
+}
+  
+  /*font-size titels*/
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  /*font-size normale tekst*/
+  p {
+    font-size: 0.8rem;
+  }
+
+  /*profiel foto in het midden centreren*/
+  .Home .introductie{
+    justify-content: center;
+  }
+
+  /*Mijn werk padding*/ 
+  .Home div{
+    /*padding: 1em;*/
+    padding-top: 50px;
+  }
+
+  .Home div ul li section img{
+    width: 100%;
+  height: auto;
+  }
+
+  /*kleine img laten zien dww mobiel*/
+  .dww .img1, .Home .af1, .Home .af3, .mdd .img4, .Home .pic2, .ux .fot1{
+    display: block;
+  }
+
+  .dww .img2, .dww .img3, .Home .af2, .Home .af4, .mdd .img5, .mdd .img6, .Home .pic1, .ux .fot2, .ux .fot3{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 48em) {
+
+  /*Profiel foto stylen*/
+  article{
+    padding: 4em; 
+  }
+
+  /*introductie tekst max width stylen*/
+  .Home .introductie section p{
+    max-width: 30rem;
+    }
+
+ /*Mijn werk padding*/ 
+ .Home div{
+  padding: 1.5em; 
+  }
+
+  /*grotere img laten zien ipad dww*/
+  .dww .img2, .Home .af1, .Home .af3, .mdd .img5, .Home .pic2, .ux .fot2{
+    display: block;
+  }
+  .dww .img1,  .dww .img3, .Home .af2, .Home .af4, .mdd .img4, .mdd .img6, .Home .pic1, .ux .fot1, .ux .fot3{
+    display: none;
+  }
+
+  .kaarten section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .kaarten section img{
+    width: 400px;
+    height: auto;
+  }
+
+}
+
+.mdd h1 ~ div{
+  display: flex;
+  padding: 1em;
+  flex-wrap: wrap;
+  gap: 2em; 
+}
+
+@media screen and (min-width: 62em){
+	
+  .about .introductie{
+    gap: 4em;
+  }
+
+   /*Main stylen*/
+   .Home main{
+    padding-top: 8em;
+  }
+
+   /*introductie tekst max width stylen*/
+  .Home .introductie.introductie section p{
+    max-width: 50rem;
+    }
+
+  /*about me text 1 max width stylen*/
+  .tekstintroductie p{
+    max-width: 30rem;
+    }
+
+
+  p{
+    font-size: 17px;
+  }
+
+   /*grotere img laten zien ipad dww*/
+   .dww .img3, .Home .af2, .Home .af4, .mdd .img6, .Home .pic1, .ux .fot3{
+    display: block;
+  }
+  .dww .img1,  .dww .img2, .Home .af1, .Home .af3, .mdd .img5, .mdd .img4, .Home .pic2, .ux .fot1, .ux .fot2{
+    display: none;
+  }
+
+  .welcome{
+    font-size: 50px;
+  }
+
+  .about .aboutmepic{
+    width: 300px;
+  }
+
+  .about .titel{
+    font-size: 40px;
+  }
+
+}
+
+.welcome span{
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInLetter 0.5s ease forwards;
+}
+
+.welcome span:nth-child(1) { animation-delay: 0s; }
+.welcome span:nth-child(2) { animation-delay: 0.1s; }
+.welcome span:nth-child(3) { animation-delay: 0.2s; }
+.welcome span:nth-child(4) { animation-delay: 0.3s; }
+.welcome span:nth-child(5) { animation-delay: 0.4s; }
+.welcome span:nth-child(6) { animation-delay: 0.5s; }
+.welcome span:nth-child(7) { animation-delay: 0.6s; }
+.welcome span:nth-child(8) { animation-delay: 0.7s; }
+.welcome span:nth-child(9) { animation-delay: 0.8s; }
+.welcome span:nth-child(10) { animation-delay: 0.9s; }
+
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.introductie{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Home div ul li section img{
+  width: 100%;
+  height: auto;
+ /* max-width: 800px;*/
+}
+
+/*Mijn werk in display flex*/
+.Home div ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Mijn werk in display lijst elementen stijlen*/
+.Home div ul li{
+  list-style: none;
+}
+
+
+footer{
+ background-color: #ffe8e8;
+}
+
+
+/****************/
+/*DWW PAGINA*/
+/****************/
+
+.ent img{
+  width: 100%;
+  height: auto;
+}
+
+.dww main{
+  padding-top: 0;
+}
+
+.dww h4, li{
+  padding: 1em;
+}
+
+.dww h1 ~ div{
+  display: flex;
+  padding: 1em;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.kaartapp{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.kaarten img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.ux h1 ~ div{
+  display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.welcome .space {
+  display: inline-block;
+  width: 0.5em; /* pas aan indien nodig */
+}
+
+/****************/
+/*ABOUT ME*/
+/****************/
+
+.aboutmepic{
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.about main {
+  padding-top: 8em;
+}
+
+.about .titel{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*animatie about me titel*/
+.about .titel{
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInLetter 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/*animatie about me foto*/
+.about .aboutmepic{
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInLetter 1s ease forwards;
+  animation-delay: 0s;  
+}
+
+.about .introductie p{
+  opacity: 0;
+  animation: fadeInLetter 1s ease forwards;
+  animation-delay: 0.7s;  
+  max-width: 35em;
+}
+
+.tweedeintroductie{
+  padding-left: 15em;
+  max-width: 55em;
+  opacity: 0;
+  animation: fadeInLetter 1s ease forwards;
+  animation-delay: 0.7s;  
+}
+
+.tweedeintroductie:first-child{
+  padding-bottom: 1em;
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about .introductie{
+  padding-left: 15em;
+  padding-bottom: 3em;
+}
+
+.about footer, .ux footer, .mdd footer, .dww footer{
+  padding: 1em;
+}
+
+
+
+
+
+
